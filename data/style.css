@@ -2,7 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto-Regular', serif;
+}
+
+:root {
+    --promo-bg: #45d1c5;
+    --bg-medium: #b1b1b1;
+    --bg-light: #eeeeee;
+    --text-color-dark-hover: #000000;
+    --text-color-dark: #666666;
+    --btn-color: #ff523b;
+    --btn-color-hover: #ff8d7d;
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('/data/fonts/Roboto-Regular.ttf');
+}
+
+body {
+    background: var(--bg-light)
 }
 
 .wrapper {
@@ -13,10 +32,106 @@
 }
 
 .container {
-    max-width: 1180px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
 .content {
     flex: 1 1 auto;
+}
+
+.header {
+    padding: 20px 0 20px 0;
+    background: white;
+}
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__left {
+    display: flex;
+}
+
+.header__logo {
+
+}
+
+.header__logo img {
+    width: 100%;
+}
+
+.header__caption {
+    padding: 4px 0 0 25px;
+    max-width: 140px;
+}
+
+.header__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__nav {
+    display: block;
+}
+
+.header__nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.header__nav ul li {
+    margin: 0 0 0 5px;
+}
+
+.header__nav-api {
+    font-weight: 600;
+    color: var(--text-color-dark);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 14px;
+    margin: 0 40px 0 0; 
+}
+
+.header__nav-api:hover {
+    color: var(--text-color-dark-hover);
+}
+
+.promo {
+    background: var(--promo-bg);
+    padding: 10px 0;
+}
+
+.footer {
+    background: var(--bg-medium);
+}
+
+.link-btn {
+    text-decoration: none;
+    padding: 8px 16px;
+    color: white;
+    background: var(--btn-color);
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+.link-btn:hover {
+    background: var(--btn-color-hover);
+
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--btn-color-hover);
+    padding: 6px 14px;
+    color: var(--btn-color-hover);
+}
+
+.btn-outline:hover {
+    color: white;
+    background: var(--btn-color);
 }

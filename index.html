@@ -1,5 +1,5 @@
-<html lang="en">
 
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,90 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <div class="content">
+            <header class="header">
+                <div class="container">
+                    <div class="header__row">
+                        <div class="header__left">
+                            <div class="header__logo">
+                                <img src="/data/images/logo.svg" alt="Logo">
+                            </div>
+                            <div class="header__caption">
+                                <p>Сервис обмена<br>криптовалют</p>
+                            </div>
+                        </div>
+                        <div class="header__right">
+                            <nav class="header__nav">
+                                <ul>
+                                    <li><a class="header__nav-api" href="#">api</a></li>
+                                    <li><a class="link-btn btn-outline" href="#">Войти</a></li>
+                                    <li><a class="link-btn" href="#">Регистрация</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="promo">
+                <div class="container">
+                    <div class="promo__row">
+                        <p>Оставь отзыв, получи награду. На этой неделе разыграем 35 000 рублей</p>
+                        <a class="link-btn btn-bait" href="#">Участвовать</a>
+                    </div>
+                </div>
+            </div>
+            <section class="main">
+                <div class="container">
+                    <div class="main__row">
+                        <div class="main__col">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia qui deserunt, quam
+                                aperiam modi ducimus, laboriosam ut sit distinctio adipisci nihil provident, excepturi
+                                aliquid non sequi expedita voluptatem soluta nostrum.</p>
+                        </div>
+                        <div class="main__col">
+                            <div class="exchange__box">
+                                <div class="exchange__container">
+                                    <p><b>Введите данные для обмена</b></p>
+                                    <p>Верификация не требуется</p>
+                                </div>
+                                <div class="course__alert">
+                                    <div class="exchange__container">
+                                        <div class="course__body">
+                                            <p><b>1 Bitcoin BTC = 1 278 127.29 Наличные RUB</b></p>
+                                            <p>00:29</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="exchange__container">
+                                    <form action="#">
+                                        <div>
+                                            <label for="city">Выберите Город</label>
+                                        </div>
+                                        <div>
+                                            <select class="form-control" name=city" id="city">
+                                                <option value="moscow" selected>Москва</option>
+                                            </select>
+                                        </div>
+                                        <label for="sell">Отдаёте</label>
+                                        <div class="form-row">
+                                            <input class="form-control" type="text" id="sell_count" name="sell_count">
+                                            <button class="form-control" name="sell" id="sell">
+                                                <option value="btc" selected>BTC</option>
+                                                </select>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="submitt__box">
+                                <button class="submitt__button" type="submitt">Перейти к обмену</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
             <div class="container">
                 <div class="header__row">
                     <div class="header__left">
@@ -20,41 +103,12 @@
                         <div class="header__caption">Сервис обмена криптовалют</div>
                     </div>
                     <div class="header__right">
-                        <nav class="header__nav">
-                            <ul>
-                                <li><a class="header__nav-api" href="#">api</a></li>
-                                <li><a class="link-btn btn-outline" href="#">Войти</a></li>
-                                <li><a class="link-btn" href="#">Регистрация</a></li>
-                            </ul>
-                        </nav>
+                        <nav>Nav Here...</nav>
                     </div>
                 </div>
             </div>
-        </header>
-        <div class="promo">
-            <div class="container" style="text-align:center;">Some promo...</div>
-        </div>
-    </div>  
-    <section>
-        <div class="content">
-
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="header__row">
-                <div class="header__left">
-                    <div class="header__logo">
-                        <img src="/data/images/logo.svg" alt="Logo">
-                    </div>
-                    <div class="header__caption">Сервис обмена криптовалют</div>
-                </div>
-                <div class="header__right">
-                    <nav>Nav Here...</nav>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 
 </html>
